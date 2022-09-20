@@ -12,7 +12,7 @@ endif
 .PHONY: all clean
 
 all:
-	$(DOCKER) build --tag zmk --file Dockerfile .
+	$(DOCKER) build --no-cache --tag zmk --file Dockerfile .
 	$(DOCKER) run --rm -it --name zmk \
 		-v $(PWD)/firmware:/app/firmware$(SELINUX1) \
 		-v $(PWD)/config:/app/config:ro$(SELINUX2) \
