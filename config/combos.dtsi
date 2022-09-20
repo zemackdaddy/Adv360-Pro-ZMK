@@ -1,0 +1,32 @@
+#undef COMBO_HOOK
+#define COMBO_HOOK global-quick-tap-ms = <75>;
+
+#define COMBO_TERM_FAST 20
+#define COMBO_TERM_SLOW 35
+
+/* Brackets (horizontal right hand) */
+/ {
+    combos {
+        compatible = "zmk,combos";
+        //combo_lbrc {
+        //    timeout-ms = <50>;
+        //    key-positions = <16 17>;
+        //    bindings = <&kp LBRC>;
+        //};
+        //combo_rbrc {
+        //    timeout-ms = <50>;
+        //    key-positions = <17 18>;
+        //    bindings = <&kp RBRC>;
+        //};
+        //combo_lparen {
+        //    timeout-ms = <50>;
+        //    key-positions = <30 31>;
+        //    bindings = <&kp LS(N9)>;
+        //};
+        //combo_rparen {
+        //    timeout-ms = <50>;
+        //    key-positions = <31 32>;
+        //    bindings = <&kp LS(N0)>;
+        //};
+    };
+};
