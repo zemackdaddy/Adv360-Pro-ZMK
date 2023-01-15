@@ -4,7 +4,7 @@ TIMESTAMP := $(shell date -u +"%Y%m%d%H%M%S")
 .PHONY: all clean
 
 all:
-	$(DOCKER) build --tag zmk --file Dockerfile .
+	$(DOCKER) build --no-cache --tag zmk --file Dockerfile .
 	$(DOCKER) run --rm -it --name zmk \
 		-v $(PWD)/firmware:/app/firmware:z \
 		-v $(PWD)/config:/app/config:ro,z \
