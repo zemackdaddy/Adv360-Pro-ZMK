@@ -25,7 +25,7 @@
 
 #define MEH(key) LS(LC(LA(key)))
 
-#define HYP(key) LS(LC(LA((key))))
+#define HYP(key) LS(LC(LA(LG(key))))
 #define HYPER    LS(LC(LA(LGUI)))
 
 #include <behaviors.dtsi>
@@ -63,10 +63,9 @@
 		pd3: prog_dvorak_rcurly_three_def {
 			compatible = "zmk,behavior-mod-morph";
 			label = "pd3";
-			mods = <(MOD_LSFT|MOD_RSFT)>;
-			#masked_mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
 			#binding-cells = <0>;
-			bindings = <&kp RBRC>, <&kp N3>;
+			bindings = <&kp RBRC>, <&kp KP_N3>;
 		};
 
 		comma_inner_morph: comma_inner_morph {
@@ -126,7 +125,15 @@
 				label = "TAP_DANCE_VIMMAC_HELP";
 				#binding-cells = <0>;
 				tapping-term-ms = <200>;
-				bindings = <&mt HYPER LG(LC(H))>, <&kp LG(LS(SLASH))>;
+				bindings = <&mt HYPER LG(LC(SLASH))>, <&kp LG(LS(SLASH))>;
+		};
+
+		td_rider_basics: td_rider_basics {
+				compatible = "zmk,behavior-tap-dance";
+				label = "TAP_DANCE_RIDER_BASICS";
+				#binding-cells = <0>;
+				tapping-term-ms = <250>;
+				bindings = <&kp LG(LS(A))>, <&kp LG(LS(N))>, <&kp LG(LS(F))>;
 		};
 	};
 
@@ -153,10 +160,10 @@ keymap {
 //                                               -------------------------           ---------------------------
     bindings = <
       &mt HYPER EQUAL  &kp N1       &kp N2        &kp N3      &kp N4       &kp N5  &tog KEYPAD       &mo MOD      &kp N6  &kp N7       &kp N8      &kp N9       &kp N0      &mt HYPER MINUS
-      &kp TAB          &kp SQT      &kp COMMA     &kp PERIOD  &kp P        &kp Y   &kp TAB           MO_TOG(NAV)  &kp F   &kp G        &kp C       &kp R        &kp L       &kp SLASH
+      &kp TAB          &kp SQT      &kp COMMA     &kp PERIOD  &kp P        &kp Y   &td_rider_basics  MO_TOG(NAV)  &kp F   &kp G        &kp C       &kp R        &kp L       &kp SLASH
       &kp ESC          &hm LALT A   &hm LCTRL O   &hm LGUI E  &hm LSHFT U  &kp I   &td_vimac_help    &to QWERTY   &kp D   &hm RSHFT H  &hm RGUI T  &hm RCTRL N  &hm RALT S  &kp BACKSLASH
       &kp LSHFT        &kp SEMI     &kp Q         &kp J       &kp K        &kp X                                  &kp B   &kp M        &kp W       &kp V        &kp Z       &kp RSHFT
-      MO_TOG(FN)       &kp GRAVE    &none         &kp LEFT    &kp RIGHT                                                   &kp UP       &kp DOWN    &kp LBKT     &kp RBKT    &mo FN
+      MO_TOG(FN)       &kp GRAVE    &pd3          &kp LEFT    &kp RIGHT                                                   &kp UP       &kp DOWN    &kp LBKT     &kp RBKT    &mo FN
                                                                         &kp LGUI        &kp LALT       &kp RCTRL       &kp RGUI
                                                                                         &kp HOME       &kp PG_UP
                                                          &lt FN BSPC    &lt APPS DEL    &kp END        &kp PG_DN       &lt APPS ENTER  &lt APPS SPACE
@@ -169,7 +176,7 @@ keymap {
       &kp TAB           &kp Q       &kp W        &kp E       &kp R        &kp T   &kp TAB                                MO_TOG(NAV)  &kp Y     &kp U        &kp I       &kp O        &kp P               &kp BACKSLASH
       &kp ESC           &hm LALT A  &hm LCTRL S  &hm LGUI D  &hm LSHFT F  &kp G   &td_vimac_help                         &to BASE     &kp H     &hm RSHFT J  &hm RGUI K  &hm RCTRL L  &hm RALT SEMICOLON  &kp SINGLE_QUOTE
       &kp LSHFT         &kp Z       &kp X        &kp C       &kp V        &kp B                                                       &kp N     &kp M        &kp COMMA   &kp PERIOD   &kp SLASH           &kp RSHFT
-      MO_TOG(FN)        &kp GRAV    &kp CAPS     &kp LEFT    &kp RIGHT                                                                          &kp UP       &kp DOWN    &kp LBKT     &kp RBKT            &mo FN
+      MO_TOG(FN)        &kp GRAV    &none        &kp LEFT    &kp RIGHT                                                                          &kp UP       &kp DOWN    &kp LBKT     &kp RBKT            &mo FN
                                                                                       &trans  &trans  &trans  &trans
                                                                                               &trans  &trans
                                                                               &trans  &trans  &trans  &trans  &trans  &trans
@@ -204,14 +211,14 @@ keymap {
 
         layer_apps {
             bindings = <
-    &kp F1      &kp F2          &kp F3            &kp F4      &kp F5        &kp F6      &tog KEYPAD                         &mo MOD   &kp F7    &kp F8      &kp F9      &kp F10   &kp F11         &kp F12
-    &trans      &trans          &kp LC(LS(TAB))   &kp UP      &kp LC(TAB)   &kp LG(T)   &none                               &none     &trans    &trans      &kp C       &trans    &trans          &kp LG(LC(NUMBER_9))
-    &kp CAPS    &kp HOME        &kp LEFT          &kp DOWN    &kp RIGHT     &kp END     &none                               &none     &sk RGUI  &sk RSHFT   &sk RCTRL   &kp LALT  &kp S           &kp LG(NUMBER_9)
-    &trans      &trans          &trans            &kp PG_UP   &kp PG_DN     &kp B                                                     &trans    &sk HYPER   &trans      &trans    &kp LG(LA(Z))   &trans
-    &trans      &trans          &trans            &trans      &trans                                                                            &trans      &trans      &trans    &trans          &trans
-                                                                                            &trans  &trans  &trans  &trans
-                                                                                                    &trans  &trans
-                                                                                    &trans  &trans  &trans  &trans  &trans  &trans
+    &kp F1      &kp F2          &kp F3            &kp F4          &kp F5        &kp F6      &tog KEYPAD                         &mo MOD   &kp F7    &kp F8          &kp F9          &kp F10   &kp F11         &kp F12
+    &trans      &kp HYP(DOWN)   &kp HOME          &kp UP          &kp END       &kp PG_UP   &none                               &none     &trans    &trans          &kp C           &trans    &trans          &kp LG(LC(NUMBER_9))
+    &kp CAPS    &kp HOME        &kp LEFT          &kp DOWN        &kp RIGHT     &kp PG_DN   &none                               &none     &none     &sk RSHFT       &sk RCTRL       &sk RGUI  &sk LALT        &kp LG(NUMBER_9)
+    &trans      &kp RG(Z)       &kp RG(X)         &kp RG(C)       &kp RG(V)     &kp TAB                                                   &trans    &sk HYPER       &trans          &trans    &kp LG(LA(Z))   &trans
+    &trans      &none           &none             &kp LC(LS(TAB)) &kp LC(TAB)                                                                       &kp HYP(LEFT)   &kp HYP(RIGHT)  &trans    &trans          &trans
+                                                                                              &kp RC(F3)  &trans  &trans  &trans
+                                                                                                          &trans  &trans
+                                                                                   &kp LG(W)  &kp LG(Q)   &trans  &trans  &trans  &trans
             >;
         };
 
