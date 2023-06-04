@@ -159,14 +159,14 @@ keymap {
 //                                               |       |       | END   |           | PG DN |        |        |
 //                                               -------------------------           ---------------------------
     bindings = <
-      &mt HYPER EQUAL  &kp N1       &kp N2        &kp N3      &kp N4       &kp N5  &tog KEYPAD       &mo MOD      &kp N6  &kp N7       &kp N8      &kp N9       &kp N0      &mt HYPER MINUS
-      &kp TAB          &kp SQT      &kp COMMA     &kp PERIOD  &kp P        &kp Y   &td_rider_basics  MO_TOG(NAV)  &kp F   &kp G        &kp C       &kp R        &kp L       &kp SLASH
-      &kp ESC          &hm LALT A   &hm LCTRL O   &hm LGUI E  &hm LSHFT U  &kp I   &td_vimac_help    &to QWERTY   &kp D   &hm RSHFT H  &hm RGUI T  &hm RCTRL N  &hm RALT S  &kp BACKSLASH
-      &kp LSHFT        &kp SEMI     &kp Q         &kp J       &kp K        &kp X                                  &kp B   &kp M        &kp W       &kp V        &kp Z       &kp RSHFT
-      MO_TOG(FN)       &kp GRAVE    &pd3          &kp LEFT    &kp RIGHT                                                   &kp UP       &kp DOWN    &kp LBKT     &kp RBKT    &mo FN
-                                                                        &kp LGUI        &kp LALT       &kp RCTRL       &kp RGUI
-                                                                                        &kp HOME       &kp PG_UP
-                                                         &lt FN BSPC    &lt APPS DEL    &kp END        &kp PG_DN       &lt APPS ENTER  &lt APPS SPACE
+      &mt HYPER EQUAL  &kp N1       &kp N2        &kp N3      &kp N4       &kp N5    &tog KEYPAD                                                                    &mo MOD          &kp N6  &kp N7       &kp N8      &kp N9       &kp N0      &mt HYPER MINUS
+      &kp TAB          &kp SQT      &kp COMMA     &kp PERIOD  &kp P        &kp Y     &td_rider_basics                                                               MO_TOG(NAV)      &kp F   &kp G        &kp C       &kp R        &kp L       &kp SLASH
+      &kp ESC          &hm LALT A   &hm LCTRL O   &hm LGUI E  &hm LSHFT U  &kp I     &to QWERTY          &kp LGUI       &kp LALT       &kp RCTRL    &kp RSHFT       &td_vimac_help       &kp D   &hm RSHFT H  &hm RGUI T  &hm RCTRL N  &hm RALT S  &kp BACKSLASH
+      &kp LSHFT        &kp SEMI     &kp Q         &kp J       &kp K        &kp X                                        &kp HOME       &kp RGUI                                      &kp B   &kp M        &kp W       &kp V        &kp Z       &kp PG_UP
+      MO_TOG(FN)       &kp GRAVE    &pd3          &kp LEFT    &kp RIGHT              &lt FN BSPC         &lt APPS DEL   &kp END        &kp RALT     &lt APPS ENTER  &lt FN SPACE     &kp UP       &kp DOWN    &kp LBKT     &kp RBKT    &kp PG_DN
+
+
+
           >;
         };
 
@@ -174,25 +174,22 @@ keymap {
         bindings = <
       &mt HYPER  EQUAL  &kp N1      &kp N2       &kp N3      &kp N4       &kp N5  &tog KEYPAD                            &mo MOD      &kp N6    &kp N7       &kp N8      &kp N9       &kp N0              &mt HYPER MINUS
       &kp TAB           &kp Q       &kp W        &kp E       &kp R        &kp T   &kp TAB                                MO_TOG(NAV)  &kp Y     &kp U        &kp I       &kp O        &kp P               &kp BACKSLASH
-      &kp ESC           &hm LALT A  &hm LCTRL S  &hm LGUI D  &hm LSHFT F  &kp G   &td_vimac_help                         &to BASE     &kp H     &hm RSHFT J  &hm RGUI K  &hm RCTRL L  &hm RALT SEMICOLON  &kp SINGLE_QUOTE
-      &kp LSHFT         &kp Z       &kp X        &kp C       &kp V        &kp B                                                       &kp N     &kp M        &kp COMMA   &kp PERIOD   &kp SLASH           &kp RSHFT
-      MO_TOG(FN)        &kp GRAV    &none        &kp LEFT    &kp RIGHT                                                                          &kp UP       &kp DOWN    &kp LBKT     &kp RBKT            &mo FN
-                                                                                      &trans  &trans  &trans  &trans
-                                                                                              &trans  &trans
-                                                                              &trans  &trans  &trans  &trans  &trans  &trans
+      &kp ESC           &hm LALT A  &hm LCTRL S  &hm LGUI D  &hm LSHFT F  &kp G   &to BASE   &trans  &trans  &trans  &trans                      &td_vimac_help     &kp H     &hm RSHFT J  &hm RGUI K  &hm RCTRL L  &hm RALT SEMICOLON  &kp SINGLE_QUOTE
+      &kp LSHFT         &kp Z       &kp X        &kp C       &kp V        &kp B               &trans  &trans                                        &kp N     &kp M        &kp COMMA   &kp PERIOD   &kp SLASH           &trans
+      MO_TOG(FN)        &kp GRAV    &none        &kp LEFT    &kp RIGHT        &trans  &trans  &trans  &trans  &trans  &trans                                                                  &kp UP       &kp DOWN    &kp LBKT     &kp RBKT            &trans
+
+
+
       >;
     };
 
         layer_keypad {
             bindings = <
       &kp EQUAL   &kp N1      &kp N2    &kp N3            &kp N4          &kp N5    &trans                              &mo MOD   &kp N6        &kp KP_NUM  &kp KP_EQUAL  &none       &none         &kp MINUS
-      &kp TAB     &kp Q       &kp W     &kp E             &kp R           &kp T     &none                               &none     &kp KP_DOT    &kp KP_N7   &kp KP_N8     &kp KP_N9   &none         &kp BSLH
-      &kp ESC     &kp A       &kp S     &kp KP_MULTIPLY   &kp KP_DIVIDE   &kp G     &none                               &none     &kp KP_EQUAL  &kp KP_N4   &kp KP_N5     &kp KP_N6   &none         &kp SQT
-      &kp LSHFT   &kp Z       &none     &kp KP_PLUS       &kp KP_MINUS    &none                                                   &kp N         &kp KP_N1   &kp KP_N2     &kp KP_N3   &kp KP_ENTER  &kp RSHFT
-      &mo FN      &kp GRAVE   &kp CAPS  &kp LEFT          &kp RIGHT                                                                             &kp UP      &kp DOWN      &kp KP_DOT  &kp RBKT      &mo FN
-                                                                                          &trans  &trans  &trans  &trans
-                                                                                                  &trans  &trans
-                                                                                  &trans  &trans  &trans  &trans  &trans  &trans
+      &kp TAB     &kp Q       &kp W     &kp E             &kp R           &kp T     &none       &none     &kp KP_DOT    &kp KP_N7   &kp KP_N8     &kp KP_N9   &none         &kp BSLH
+      &kp ESC     &kp A       &kp S     &kp KP_MULTIPLY   &kp KP_DIVIDE   &kp G     &none       &trans  &trans &trans  &trans                       &none     &kp KP_EQUAL  &kp KP_N4   &kp KP_N5     &kp KP_N6   &none         &kp SQT
+      &trans      &kp Z       &none     &kp KP_PLUS       &kp KP_MINUS    &none                 &trans  &trans                   &kp N         &kp KP_N1   &kp KP_N2     &kp KP_N3   &kp KP_ENTER  &trans
+      &trans      &kp GRAVE   &kp CAPS  &kp LEFT          &kp RIGHT                      &trans  &trans  &trans  &trans  &trans  &trans                &kp UP      &kp DOWN      &kp KP_DOT  &kp RBKT      &trans
             >;
         };
 
@@ -200,12 +197,10 @@ keymap {
             bindings = <
      &kp F1       &kp F2          &kp F3      &kp F4      &kp F5      &kp F6      &tog KEYPAD                           &mo MOD   &kp F7      &kp F8      &kp F9      &kp F10       &kp F11         &kp F12
      &kp TAB      &kp LC(F2)      &kp LC(F3)  &kp LC(F4)  &kp LC(F5)  &kp LC(F6)  &trans                                &trans    &kp LC(F7)  &kp LC(F8)  &kp F9      &kp LC(F10)   &kp LC(F11)     &kp LC(F12)
-     &trans       &trans          &trans      &trans      &trans      &trans      &trans                                &trans    &kp F5      &kp F10     &kp F11     &kp F12       &trans          &trans
-     &trans       &trans          &trans      &kp LG(W)   &kp V       &kp B                                                       &trans      &trans      &trans      &trans        &kp LG(LA(Z))   &trans
-     &trans       &trans          &trans      &trans      &kp LSHFT                                                                           &kp RSHFT   &trans      &trans        &trans          &trans
-                                                                                  &trans  &trans    &trans  &trans
-                                                                                          &trans    &trans
-                                                                       &kp LCTRL  &trans  &trans    &trans  &trans  &kp RCTRL
+     &trans       &trans          &trans      &trans      &trans      &trans      &trans          &trans  &trans  &trans  &trans                      &trans    &kp F5      &kp F10     &kp F11     &kp F12       &trans          &trans
+     &trans       &trans          &trans      &kp LG(W)   &kp V       &kp B                            &trans  &trans                           &trans      &trans      &trans      &trans        &kp LG(LA(Z))   &trans
+     &trans       &trans          &trans      &trans      &kp LSHFT              &kp LCTRL  &trans  &trans    &trans  &trans  &kp RCTRL                                                             &kp RSHFT   &trans      &trans        &trans          &trans
+
             >;
         };
 
@@ -213,12 +208,9 @@ keymap {
             bindings = <
     &kp F1      &kp F2          &kp F3            &kp F4          &kp F5        &kp F6      &tog KEYPAD                         &mo MOD   &kp F7    &kp F8          &kp F9          &kp F10   &kp F11         &kp F12
     &trans      &kp HYP(DOWN)   &kp HOME          &kp UP          &kp END       &kp PG_UP   &none                               &none     &trans    &trans          &kp C           &trans    &trans          &kp LG(LC(NUMBER_9))
-    &kp CAPS    &kp HOME        &kp LEFT          &kp DOWN        &kp RIGHT     &kp PG_DN   &none                               &none     &none     &sk RSHFT       &sk RCTRL       &sk RGUI  &sk LALT        &kp LG(NUMBER_9)
-    &trans      &kp RG(Z)       &kp RG(X)         &kp RG(C)       &kp RG(V)     &kp TAB                                                   &trans    &sk HYPER       &trans          &trans    &kp LG(LA(Z))   &trans
-    &trans      &none           &none             &kp LC(LS(TAB)) &kp LC(TAB)                                                                       &kp HYP(LEFT)   &kp HYP(RIGHT)  &trans    &trans          &trans
-                                                                                              &kp RC(F3)  &trans  &trans  &trans
-                                                                                                          &trans  &trans
-                                                                                   &kp LG(W)  &kp LG(Q)   &trans  &trans  &trans  &trans
+    &kp CAPS    &kp HOME        &kp LEFT          &kp DOWN        &kp RIGHT     &kp PG_DN   &none     &kp RC(F3)  &trans  &trans  &trans                          &none     &none     &sk RSHFT       &sk RCTRL       &sk RGUI  &sk LALT        &kp LG(NUMBER_9)
+    &trans      &kp RG(Z)       &kp RG(X)         &kp RG(C)       &kp RG(V)     &kp TAB                  &trans  &trans                                 &trans    &sk HYPER       &trans          &trans    &kp LG(LA(Z))   &trans
+    &trans      &none           &none             &kp LC(LS(TAB)) &kp LC(TAB)            &kp LG(W)  &kp LG(Q)   &trans  &trans  &trans  &trans                                                           &kp HYP(LEFT)   &kp HYP(RIGHT)  &trans    &trans          &trans
             >;
         };
 
@@ -226,12 +218,13 @@ keymap {
             bindings = <
     &none   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4   &none                             &trans                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none
     &none   &none         &none         &none         &none            &none          &bootloader                       &bootloader             &none         &none         &none         &none         &none           &none
-    &none   &none         &none         &none         &none            &none          &none                             &none                   &none         &none         &none         &none         &none           &none
-    &none   &none         &none         &none         &none            &none                                                                    &none         &none         &none         &none         &none           &none
-    &none   &none         &none         &bl BL_INC    &bl BL_DEC                                                                                              &bl BL_INC    &bl BL_DEC    &none         &none           &none
-                                                                                          &bt BT_CLR  &none   &bt BT_CLR  &bt BT_CLR
-                                                                                                      &none   &none
-                                                                                  &none   &bl BL_TOG  &none   &none       &bl BL_TOG  &none
+    &none   &none         &none         &none         &none            &none          &none      &bt BT_CLR  &none   &bt BT_CLR  &bt BT_CLR                       &none                   &none         &none         &none         &none         &none           &none
+    &none   &none         &none         &none         &none            &none
+                                                                                                      &trans   &trans
+                                               &none         &none         &trans         &trans         &trans           &trans
+    &none   &none         &none         &bl BL_INC    &bl BL_DEC                 &trans   &bl BL_TOG  &trans   &trans       &bl BL_TOG  &trans                                                                             &bl BL_INC    &bl BL_DEC    &none         &none           &none
+
+
             >;
         };
 
@@ -239,12 +232,10 @@ keymap {
 			bindings = <
         &none       &none   &none       &pd3      &none       &none   &none                                             &none   &none             &none             &none           &none               &none   &none
         &kp TAB     &none   &none       &trans    &none       &none   &trans                                            &trans  &mwh SCROLL_UP    &mwh SCROLL_LEFT  &mmv MOVE_UP		&mwh SCROLL_RIGHT   &none   &none
-        &none       &none   &mkp RCLK   &none     &mkp LCLK   &none   &trans                                            &trans  &mwh SCROLL_DOWN  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT     &none   &kp BACKSLASH
-        &kp LSHFT   &none   &none       &none     &none       &none                                                             &none             &none             &none           &none               &none   &kp RSHFT
-        &none       &none   &none       &kp LEFT  &kp RIGHT                                                                                       &kp UP            &kp DOWN        &none               &none   &none
-                                                                                      &trans  &trans  &trans  &trans
-                                                                                              &trans  &trans
-                                                                              &trans  &trans  &trans  &trans  &trans  &trans
+        &none       &none   &mkp RCLK   &none     &mkp LCLK   &none   &trans           &trans  &trans  &trans  &trans                                 &trans  &mwh SCROLL_DOWN  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT     &none   &kp BACKSLASH
+        &kp LSHFT   &none   &none       &none     &none       &none                                                                                                                                   &trans  &trans
+                                    &none             &none             &none           &none               &none   &kp RSHFT
+        &none       &none   &none       &kp LEFT  &kp RIGHT            &trans  &trans  &trans  &trans  &trans  &trans                                                                           &kp UP            &kp DOWN        &none               &none   &none
 				>;
 		};
 	};
