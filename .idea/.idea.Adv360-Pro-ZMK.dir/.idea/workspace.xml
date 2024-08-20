@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="85d47780-78f2-4795-a217-1d6706ef04ac" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/config/adv360.keymap" beforeDir="false" afterPath="$PROJECT_DIR$/config/adv360.keymap" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="adv360proapp[bot] &lt;105741512+adv360proapp[bot]@users.noreply.github.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/.config/karabiner/assets/complex_modifications/mouse-keys-ambi-maury.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/config/boards/arm/adv360/adv360_left_defconfig" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/config/boards/arm/adv360/adv360_right_defconfig" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/config/info.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/config/keymap.json" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2XDxoA4ds6YOF24gFcK3DkCBQFn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Rebasing V3.0",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "TEXT"
+    ],
+    "rider.external.source.directories": [
+      "/Users/mauryhill/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache",
+      "/Users/mauryhill/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache",
+      "/Users/mauryhill/Library/Application Support/Symbols/src"
+    ]
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task id="LOCAL-00001" summary="dvorak">
+      <option name="closed" value="true" />
+      <created>1698099774500</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698099774500</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="85d47780-78f2-4795-a217-1d6706ef04ac" name="Changes" comment="dvorak" />
+      <created>1698177623614</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698177623614</updated>
+      <workItem from="1698177624648" duration="4610000" />
+      <workItem from="1698187266034" duration="8504000" />
+      <workItem from="1698588752800" duration="1544000" />
+      <workItem from="1698610577291" duration="40000" />
+      <workItem from="1698782662159" duration="20000" />
+      <workItem from="1698888499501" duration="864000" />
+      <workItem from="1699139381349" duration="12049000" />
+      <workItem from="1699626649690" duration="597000" />
+      <workItem from="1699627467440" duration="48000" />
+      <workItem from="1699627527811" duration="320000" />
+      <workItem from="1699627862673" duration="597000" />
+      <workItem from="1701468940119" duration="4916000" />
+      <workItem from="1706906999292" duration="1350000" />
+      <workItem from="1711489332374" duration="6410000" />
+      <workItem from="1711663607008" duration="5742000" />
+      <workItem from="1712616089441" duration="2762000" />
+      <workItem from="1712676918230" duration="2185000" />
+      <workItem from="1712916935472" duration="1749000" />
+      <workItem from="1713105167009" duration="5000" />
+      <workItem from="1713906507310" duration="768000" />
+      <workItem from="1714856363509" duration="28933000" />
+      <workItem from="1716374415735" duration="11740000" />
+      <workItem from="1717151587827" duration="1201000" />
+      <workItem from="1717692381225" duration="598000" />
+      <workItem from="1718026859582" duration="1184000" />
+      <workItem from="1718570259398" duration="1329000" />
+      <workItem from="1718718718327" duration="661000" />
+      <workItem from="1719784642745" duration="1430000" />
+      <workItem from="1719951704999" duration="59000" />
+      <workItem from="1720118711150" duration="407000" />
+      <workItem from="1720119136039" duration="2232000" />
+      <workItem from="1720175907438" duration="2457000" />
+      <workItem from="1720205900303" duration="15306000" />
+      <workItem from="1720658247279" duration="7670000" />
+      <workItem from="1720704565566" duration="600000" />
+      <workItem from="1720992540523" duration="13544000" />
+      <workItem from="1721241374796" duration="623000" />
+      <workItem from="1721242270978" duration="605000" />
+      <workItem from="1721420559115" duration="3743000" />
+      <workItem from="1723803106851" duration="5938000" />
+    </task>
+    <task id="LOCAL-00002" summary="quick tap the outer thumbs">
+      <option name="closed" value="true" />
+      <created>1712616566545</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712616566545</updated>
+    </task>
+    <task id="LOCAL-00003" summary="go back to Karabiner running the mouse">
+      <option name="closed" value="true" />
+      <created>1720206600024</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720206600024</updated>
+    </task>
+    <task id="LOCAL-00004" summary="make only one root node so I can use Nick's gui">
+      <option name="closed" value="true" />
+      <created>1720211462122</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1720211462122</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="dvorak" />
+    <MESSAGE value="Revert &quot;tweaking apps layer&quot;&#10;&#10;This reverts commit fc5332c3" />
+    <MESSAGE value="quick tap the outer thumbs" />
+    <MESSAGE value="go back to Karabiner running the mouse" />
+    <MESSAGE value="make only one root node so I can use Nick's gui" />
+    <option name="LAST_COMMIT_MESSAGE" value="make only one root node so I can use Nick's gui" />
+  </component>
+</project>
