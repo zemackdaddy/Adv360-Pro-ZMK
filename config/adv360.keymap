@@ -203,13 +203,13 @@
     keymap {
         compatible = "zmk,keymap";
 
-        dvorak {
+        maltron {
             bindings = <
-&mt F1 N1  &mt F2 N2           &mt F3 N3           &mt F4 N4            &mt F5 N5            &mt F6 N6            &launchbar                                                                                                 &switchapps                &mt F7 N7      &mt F8 N8             &mt RS(N9) N9         &mt RS(N0) N0        &mt RS(MINUS) MINUS  &mt RS(EQUAL) EQUAL
-&kp TAB    &kp Q               &kp P               &kp Y                &lt 4 C              &kp B                &kp TAB                                                                                                    &mt KP_MULTIPLY KP_DIVIDE  &kp V          &kp M                 &kp U                 &kp Z                &kp L                &kp SLASH
-&kp ESC    &homey_left LALT A  &homey_left LGUI N  &homey_left LCTRL I  &index_left LSHFT S  &mt LC(LG(SLASH)) F  &switchapps  &homey_left LCTRL BACKSPACE  &kp LALT                   &kp LALT                 &kp LCTRL    &vimmac                    &kp D          &index_right RSHFT T  &homey_right RCTRL H  &homey_right RGUI O  &homey_right RALT R  &kp SINGLE_QUOTE
-&kp LSHFT  &kp COMMA           &kp PERIOD          &kp J                &kp G                &none                                                          &homey_left LGUI HOME      &homey_right RGUI PG_UP                                          &kp SEMICOLON  &kp W                 &kp K                 &kp X                &kp SLASH            &kp RIGHT_SHIFT
-&tog 2     &kp GRAVE           &kp CAPS            &kp LEFT             &kp RIGHT                                 &thumb 2 E   &lt 3 TAB                    &kp END                    &kp PG_DN                &lt 3 ENTER  &thumb 2 SPACE                            &kp UP                &kp DOWN              &kp LBKT             &kp RBKT             &kp EQUAL
+&mt F1 N1                          &mt F2 N2           &mt F3 N3           &mt F4 N4            &mt F5 N5            &mt F6 N6            &launchbar                                                                                  &switchapps                &mt F7 N7      &mt F8 N8             &mt RS(N9) N9         &mt RS(N0) N0        &mt RS(MINUS) MINUS  &mt RS(EQUAL) EQUAL
+&mt RS(LEFT_BRACKET) LEFT_BRACKET  &kp Q               &kp P               &kp Y                &lt 4 C              &kp B                &kp TAB                                                                                     &mt KP_MULTIPLY KP_DIVIDE  &kp V          &kp M                 &kp U                 &kp Z                &kp L                &mt RS(RIGHT_BRACKET) RIGHT_BRACKET
+&kp ESC                            &homey_left LALT A  &homey_left LGUI N  &homey_left LCTRL I  &index_left LSHFT S  &mt LC(LG(SLASH)) F  &vimmac     &homey_left HOME BACKSPACE  &kp END            &kp LEFT_ARROW  &kp RIGHT_ARROW  &mt KP_MULTIPLY KP_DIVIDE  &kp D          &index_right RSHFT T  &homey_right RCTRL H  &homey_right RGUI O  &homey_right RALT R  &kp SINGLE_QUOTE
+&kp LSHFT                          &kp COMMA           &kp PERIOD          &kp J                &kp G                &mt CAPS GRAVE                                               &kp PG_UP          &kp UP_ARROW                                                &kp SEMICOLON  &kp W                 &kp K                 &kp X                &kp SLASH            &kp RIGHT_SHIFT
+&kp LEFT_SHIFT                     &mt RS(PIPE) PIPE   &kp LEFT_CONTROL    &kp LEFT_GUI         &kp LEFT_ALT                              &thumb 2 E  &lt 3 TAB                   &kp PAGE_DOWN      &kp DOWN_ARROW  &lt 3 ENTER      &thumb 2 SPACE                            &kp RIGHT_ALT         &kp RIGHT_GUI         &kp RIGHT_CONTROL    &kp SLASH            &kp RIGHT_SHIFT
             >;
         };
 
