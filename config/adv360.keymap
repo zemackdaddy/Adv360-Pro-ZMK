@@ -137,8 +137,7 @@
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
             bindings = <&mo>, <&tog>;
-            };
-
+        };
     };
 
     macros {
@@ -215,10 +214,10 @@
 
         maltron {
             bindings = <
-&mt F1 N1                          &mt F2 N2          &mt F3 N3         &mt F4 N4     &mt F5 N5      &mt F6 N6       &launchbar                                                                                  &switchapps      &mt F7 N7      &mt F8 N8      &mt RS(N9) N9  &mt RS(N0) N0      &mt RS(MINUS) MINUS  &mt RS(EQUAL) EQUAL
-&mt RS(LEFT_BRACKET) LEFT_BRACKET  &kp Q              &kp P             &kp Y         &lt 4 C        &kp B           &kp TAB                                                                                     &kp KP_MULTIPLY  &kp V          &kp M          &kp U          &kp Z              &kp L                &mt RS(RIGHT_BRACKET) RIGHT_BRACKET
-&kp ESC                            &kp A              &kp N             &kp I         &kp S          &kp F           &vimmac     &homey_left HOME BACKSPACE  &kp END            &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp KP_DIVIDE    &kp D          &kp T          &kp H          &kp O              &kp R                &kp SINGLE_QUOTE
-&sk LSHFT                          &mt LALT COMMA     &mt LGUI PERIOD   &mt LCTRL J   &kp G          &mt CAPS GRAVE                                          &kp PG_UP          &kp UP_ARROW                                      &kp SEMICOLON  &kp W          &kp K          &kp X              &kp SLASH            &sk RIGHT_SHIFT
+&mt F1 N1                          &mt F2 N2          &mt F3 N3         &mt F4 N4     &mt F5 N5        &mt F6 N6       &launchbar                                                                                  &switchapps      &mt F7 N7      &mt F8 N8      &mt RS(N9) N9  &mt RS(N0) N0      &mt RS(MINUS) MINUS  &mt RS(EQUAL) EQUAL
+&mt RS(LEFT_BRACKET) LEFT_BRACKET  &kp Q              &kp P             &kp Y         &lt 4 C          &kp B           &kp TAB                                                                                     &kp KP_MULTIPLY  &kp V          &kp M          &kp U          &kp Z              &kp L                &mt RS(RIGHT_BRACKET) RIGHT_BRACKET
+&kp ESC                            &kp A              &kp N             &kp I         &kp S            &kp F           &vimmac     &homey_left HOME BACKSPACE  &kp END            &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp KP_DIVIDE    &kp D          &kp T          &kp H          &kp O              &kp R                &kp SINGLE_QUOTE
+&sk LSHFT                          &mt LALT COMMA     &mt LGUI PERIOD   &mt LCTRL J   &kp G            &mt CAPS GRAVE                                          &kp PG_UP          &kp UP_ARROW                                      &kp SEMICOLON  &kp W          &kp K          &kp X              &kp SLASH            &sk RIGHT_SHIFT
 &sk LEFT_SHIFT                     &mt RS(PIPE) PIPE  &kp LEFT_CONTROL  &kp LEFT_GUI  &layer_hold 2 2                  &thumb 2 E  &lt 3 TAB                   &kp PAGE_DOWN      &kp DOWN_ARROW  &lt 3 ENTER      &thumb 2 SPACE                  &kp RIGHT_ALT  &kp RIGHT_GUI  &kp RIGHT_CONTROL  &kp SLASH            &sk RIGHT_SHIFT
             >;
         };
@@ -239,7 +238,7 @@
 &kp LG(LC(S))  &kp HOME            &kp LC(LS(TAB))  &kp LC(T)       &kp LC(TAB)           &trans     &trans                                                        &kp RS(NUMBER_9)  &kp RS(LEFT_BRACKET)  &kp RS(RIGHT_BRACKET)   &kp LEFT_BRACKET         &kp RIGHT_BRACKET  &trans         &trans
 &tog 2         &kp LEFT_ARROW      &kp UP_ARROW     &kp DOWN_ARROW  &mt LEFT_SHIFT RIGHT  &kp PG_UP  &trans      &trans  &trans      &trans             &kp RSHFT  &kp RS(N0)        &kp F5                &kp F9                  &kp F10                  &kp F12            &kp F11        &trans
 &kp HOME       &kp LC(Z)           &kp LC(X)        &kp LC(C)       &kp LC(V)             &kp PG_DN                      &trans      &trans                                          &trans                &trans                  &trans                   &trans             &trans         &trans
-&kp END        &kp LC(LEFT_ARROW)  &kp LC(HOME)     &kp LC(END)     &kp LC(RIGHT_ARROW)              &kp DELETE  &trans  &trans      &kp LA(BACKSPACE)  &kp ENTER  &kp BACKSPACE                           &kp LC(LA(LEFT_ARROW))  &kp LC(LA(RIGHT_ARROW))  &trans             &kp BACKSLASH  &kp PIPE
+&kp END        &kp LC(LEFT_ARROW)  &kp LC(HOME)     &kp LC(END)     &tog 2                           &kp DELETE  &trans  &trans      &kp LA(BACKSPACE)  &kp ENTER  &kp BACKSPACE                           &kp LC(LA(LEFT_ARROW))  &kp LC(LA(RIGHT_ARROW))  &trans             &kp BACKSLASH  &kp PIPE
             >;
         };
 
@@ -249,7 +248,7 @@
 &none  &none         &none         &none         &none         &none         &bootloader                                                        &bootloader      &kp KP_EQUAL  &kp KP_N7   &kp KP_N8   &kp KP_N9  &none  &none
 &none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &rgb_ug RGB_MEFS_CMD 5  &kp KP_DIVIDE    &kp KP_DOT    &kp KP_N4   &kp KP_N5   &kp KP_N6  &none  &none
 &none  &none         &none         &none         &none         &none                             &none      &none                                                &none         &none       &none       &none      &none  &none
-&none  &none         &none         &none         &tog 3                       &none        &none  &none      &none       &bl BL_TOG              &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none      &none  &none
+&none  &none         &none         &none         &tog 3                      &none        &none  &none      &none       &bl BL_TOG              &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none      &none  &none
             >;
         };
 
