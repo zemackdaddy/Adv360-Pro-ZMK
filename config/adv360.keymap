@@ -212,16 +212,6 @@
     keymap {
         compatible = "zmk,keymap";
 
-        maltron {
-            bindings = <
-&mt F1 EQUAL                       &mt F2 N1               &mt F3 N2         &mt F4 N3     &mt F5 N4  &mt F6 N5       &launchbar                                                                                  &switchapps      &mt F7 N6      &mt F8 N7      &mt F9 N8      &mt F10 N9         &mt F11 N0  &mt F12 MINUS
-&mt RS(LEFT_BRACKET) LEFT_BRACKET  &kp Q                   &kp P             &kp Y         &lt 4 C    &kp B           &kp TAB                                                                                     &kp KP_MULTIPLY  &kp V          &kp M          &kp U          &kp Z              &kp L       &mt RS(RIGHT_BRACKET) RIGHT_BRACKET
-&kp ESC                            &kp A                   &kp N             &kp I         &kp S      &kp F           &vimmac     &homey_left HOME BACKSPACE  &kp END            &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp KP_DIVIDE    &kp D          &kp T          &kp H          &kp O              &kp R       &kp SINGLE_QUOTE
-&sk LSHFT                          &kp COMMA               &kp PERIOD        &kp J         &kp G      &mt CAPS GRAVE                                          &kp PG_UP          &kp UP_ARROW                                      &kp SEMICOLON  &kp W          &kp K          &kp X              &kp SLASH   &sk RIGHT_SHIFT
-&sk LEFT_SHIFT                     &mt RS(PIPE) BACKSLASH  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LALT                   &thumb 2 E  &lt 3 TAB                   &kp PAGE_DOWN      &kp DOWN_ARROW  &lt 3 ENTER      &thumb 2 SPACE                  &kp RIGHT_ALT  &kp RIGHT_GUI  &kp RIGHT_CONTROL  &kp SLASH   &sk RIGHT_SHIFT
-            >;
-        };
-
         qwerty {
             bindings = <
 &mo 4      &kp N1              &kp N2              &kp N3               &kp N4               &kp N5  &launchbar                                                                                                                  &switchapps  &kp N6  &kp N7                &kp N8                &kp N9               &kp N0                       &kp MINUS
@@ -229,6 +219,16 @@
 &kp ESC    &homey_left LALT A  &homey_left LGUI S  &homey_left LCTRL D  &index_left LSHFT F  &kp G   &kp ESC          &homey_left LCTRL ESC  &kp LALT                   &kp LALT                 &kp LCTRL                       &vimmac      &kp H   &index_right RSHFT J  &homey_right RCTRL K  &homey_right LGUI L  &homey_right RALT SEMICOLON  &kp SQT
 &kp LSHFT  &kp Z               &kp X               &kp C                &kp V                &kp B                                           &homey_left LGUI HOME      &homey_right RGUI PG_UP                                               &kp N   &kp M                 &kp COMMA             &kp PERIOD           &kp SLASH                    &mt RIGHT_SHIFT EQUAL
 &tog 2     &kp GRAVE           &kp CAPS            &kp LEFT             &kp RIGHT                    &lt 2 BACKSPACE  &kp TAB                &kp END                    &kp PG_DN                &homey_right RIGHT_SHIFT ENTER  &lt 2 SPACE          &kp UP                &kp DOWN              &kp LBKT             &kp RBKT                     &toggletalon
+            >;
+        };
+
+        maltron {
+            bindings = <
+&mt F1 EQUAL                       &mt F2 N1               &mt F3 N2         &mt F4 N3     &mt F5 N4  &mt F6 N5       &launchbar                                                                                  &switchapps      &mt F7 N6      &mt F8 N7      &mt F9 N8      &mt F10 N9         &mt F11 N0  &mt F12 MINUS
+&mt RS(LEFT_BRACKET) LEFT_BRACKET  &kp Q                   &kp P             &kp Y         &lt 4 C    &kp B           &kp TAB                                                                                     &kp KP_MULTIPLY  &kp V          &kp M          &kp U          &kp Z              &kp L       &mt RS(RIGHT_BRACKET) RIGHT_BRACKET
+&kp ESC                            &kp A                   &kp N             &kp I         &kp S      &kp F           &vimmac     &homey_left HOME BACKSPACE  &kp END            &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp KP_DIVIDE    &kp D          &kp T          &kp H          &kp O              &kp R       &kp SINGLE_QUOTE
+&sk LSHFT                          &kp COMMA               &kp PERIOD        &kp J         &kp G      &mt CAPS GRAVE                                          &kp PG_UP          &kp UP_ARROW                                      &kp SEMICOLON  &kp W          &kp K          &kp X              &kp SLASH   &sk RIGHT_SHIFT
+&sk LEFT_SHIFT                     &mt RS(PIPE) BACKSLASH  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LALT                   &thumb 2 E  &lt 3 TAB                   &kp PAGE_DOWN      &kp DOWN_ARROW  &lt 3 ENTER      &thumb 2 SPACE                  &kp RIGHT_ALT  &kp RIGHT_GUI  &kp RIGHT_CONTROL  &kp SLASH   &sk RIGHT_SHIFT
             >;
         };
 
