@@ -210,6 +210,22 @@
 
             label = "LAUNCHBAR";
         };
+
+        typ_from: typ_from {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp F &kp R &kp O &kp M &kp SPACE>;
+            label = "TYP_FROM";
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        typ_from {
+            bindings = <&typ_from>;
+            key-positions = <33 44>;
+        };
     };
 
     keymap {
