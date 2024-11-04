@@ -217,6 +217,13 @@
             bindings = <&kp SPACE &kp F &kp R &kp O &kp M &kp SPACE>;
             label = "TYP_FROM";
         };
+
+        typ_dont: typ_dont {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp O &kp N &kp SQT &kp T>;
+            label = "TYP_DONT";
+        };
     };
 
     combos {
@@ -225,6 +232,11 @@
         typ_from {
             bindings = <&typ_from>;
             key-positions = <33 44>;
+        };
+
+        typ_dont {
+            bindings = <&typ_dont>;
+            key-positions = <40 29>;
         };
     };
 
@@ -256,7 +268,7 @@
 &kp F1         &kp F2              &kp F3           &kp F4          &kp F5                &kp F6     &tog 5                                                        &mo 3             &kp F7                &kp F8                  &kp F9                   &kp F10            &kp F11        &kp F12
 &kp LG(LC(S))  &kp HOME            &kp LC(LS(TAB))  &kp LC(T)       &kp LC(TAB)           &trans     &to 1                                                         &kp RS(NUMBER_9)  &kp RS(LEFT_BRACKET)  &kp RS(RIGHT_BRACKET)   &kp LEFT_BRACKET         &kp RIGHT_BRACKET  &trans         &trans
 &tog 2         &kp LEFT_ARROW      &kp UP_ARROW     &kp DOWN_ARROW  &mt LEFT_SHIFT RIGHT  &kp PG_UP  &to 0       &trans  &trans      &trans             &kp RSHFT  &kp RS(N0)        &kp F5                &kp F9                  &kp F10                  &kp F12            &kp F11        &trans
-&kp HOME       &kp LC(Z)           &kp LC(X)        &kp LC(C)       &kp LC(V)             &kp PG_DN                      &trans      &trans                                          &trans                &trans                  &trans                   &trans             &trans         &trans
+&kp HOME       &kp LC(Z)           &kp LC(X)        &kp LC(C)       &kp LC(V)             &kp PG_DN                      &trans      &trans                                          &kp LS(F5)            &trans                  &kp LS(F10)              &trans             &trans         &trans
 &kp END        &kp LC(LEFT_ARROW)  &kp LC(HOME)     &kp LC(END)     &tog 2                           &kp DELETE  &trans  &trans      &kp LA(BACKSPACE)  &kp ENTER  &kp BACKSPACE                           &kp LC(LA(LEFT_ARROW))  &kp LC(LA(RIGHT_ARROW))  &trans             &kp BACKSLASH  &kp PIPE
             >;
         };
