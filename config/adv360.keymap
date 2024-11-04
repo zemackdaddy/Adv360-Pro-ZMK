@@ -224,6 +224,13 @@
             bindings = <&kp D &kp O &kp N &kp SQT &kp T>;
             label = "TYP_DONT";
         };
+
+        typ_rocket: typ_rocket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp EQUAL &kp GT &kp SPACE>;
+            label = "TYP_ROCKET";
+        };
     };
 
     combos {
@@ -236,7 +243,12 @@
 
         typ_dont {
             bindings = <&typ_dont>;
-            key-positions = <40 29>;
+            key-positions = <40 30>;
+        };
+
+        typ_rocket {
+            bindings = <&typ_rocket>;
+            key-positions = <67 68>;
         };
     };
 
