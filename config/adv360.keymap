@@ -231,6 +231,13 @@
             bindings = <&kp SPACE &kp EQUAL &kp GT &kp SPACE>;
             label = "TYP_ROCKET";
         };
+
+        typ_select: typ_select {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp E &kp L &kp E &kp C &kp T &kp SPACE>;
+            label = "TYP_SELECT";
+        };
     };
 
     combos {
@@ -249,6 +256,11 @@
         typ_rocket {
             bindings = <&typ_rocket>;
             key-positions = <67 68>;
+        };
+
+        typ_select {
+            bindings = <&typ_select>;
+            key-positions = <32 26>;
         };
     };
 
