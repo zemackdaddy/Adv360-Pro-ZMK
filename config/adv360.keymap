@@ -245,6 +245,13 @@
             bindings = <&kp W &kp H &kp E &kp R &kp E &kp SPACE>;
             label = "TYP_WHERE";
         };
+
+        typ_orderby: typ_orderby {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp R &kp D &kp E &kp R &kp SPACE &kp B &kp Y &kp SPACE>;
+            label = "TYP_ORDERBY";
+        };
     };
 
     combos {
@@ -273,6 +280,11 @@
         typ_where {
             bindings = <&typ_where>;
             key-positions = <55 44>;
+        };
+
+        typ_orderby {
+            bindings = <&typ_orderby>;
+            key-positions = <43 19>;
         };
     };
 
