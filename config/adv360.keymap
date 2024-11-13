@@ -296,7 +296,7 @@
 
         typ_update {
             bindings = <&typ_update>;
-            key-positions = <24 15>;
+            key-positions = <24 16>;
         };
     };
 
