@@ -337,17 +337,6 @@
     keymap {
         compatible = "zmk,keymap";
 
-        qwerty {
-            display-name = "qwerty";
-            bindings = <
-&kp EQUAL  &kp N1              &kp N2              &kp N3               &kp N4               &kp N5  &launchbar                                      &switchapps  &kp N6  &kp N7                &kp N8                &kp N9               &kp N0                       &kp MINUS
-&kp TAB    &kp Q               &kp W               &lt 5 E              &lt 4 R              &kp T   &sl 3                                           &trans       &kp Y   &kp U                 &kp I                 &kp O                &kp P                        &kp BACKSLASH
-&kp ESC    &homey_left LALT A  &homey_left LGUI S  &homey_left LCTRL D  &index_left LSHFT F  &kp G   &trans      &trans  &trans      &trans  &trans  &trans       &kp H   &index_right RSHFT J  &homey_right RCTRL K  &homey_right LGUI L  &homey_right RALT SEMICOLON  &kp SQT
-&sk LSHFT  &kp Z               &kp X               &kp C                &kp V                &kp B                       &trans      &trans                       &kp N   &kp M                 &kp COMMA             &kp PERIOD           &kp SLASH                    &sk RIGHT_SHIFT
-&sl 3      &trans              &trans              &trans               &trans                       &trans      &trans  &trans      &trans  &trans  &trans               &trans                &trans                &trans               &trans                       &toggletalon
-            >;
-        };
-
         maltron {
             display-name = "Maltron";
             bindings = <
@@ -359,12 +348,23 @@
             >;
         };
 
+        qwerty {
+            display-name = "qwerty";
+            bindings = <
+&kp EQUAL  &kp N1              &kp N2              &kp N3               &kp N4               &kp N5  &launchbar                                      &switchapps  &kp N6  &kp N7                &kp N8                &kp N9               &kp N0                       &kp MINUS
+&kp TAB    &kp Q               &kp W               &lt 5 E              &lt 4 R              &kp T   &sl 3                                           &trans       &kp Y   &kp U                 &kp I                 &kp O                &kp P                        &kp BACKSLASH
+&kp ESC    &homey_left LALT A  &homey_left LGUI S  &homey_left LCTRL D  &index_left LSHFT F  &kp G   &trans      &trans  &trans      &trans  &trans  &trans       &kp H   &index_right RSHFT J  &homey_right RCTRL K  &homey_right LGUI L  &homey_right RALT SEMICOLON  &kp SQT
+&sk LSHFT  &kp Z               &kp X               &kp C                &kp V                &kp B                       &trans      &trans                       &kp N   &kp M                 &kp COMMA             &kp PERIOD           &kp SLASH                    &sk RIGHT_SHIFT
+&sl 3      &trans              &trans              &trans               &trans                       &trans      &trans  &trans      &trans  &trans  &trans               &trans                &trans                &trans               &trans                       &toggletalon
+            >;
+        };
+
         fn {
             display-name = "Fn";
             bindings = <
 &kp F1         &kp F2          &kp F3           &kp F4          &kp F5                &kp F6         &tog 5                                                                              &mo 3             &kp F7         &kp F8                  &kp F9                   &kp F10          &kp F11        &kp F12
-&kp LG(LC(S))  &kp RC(W)       &kp LC(LS(TAB))  &kp LC(T)       &kp LC(TAB)           &kp LC(LS(T))  &to 0                                                                               &kp RS(NUMBER_9)  &mt RS(F7) F7  &kp RA(RC(N9))          &kp LEFT_BRACKET         &kp LG(LS(F12))  &trans         &trans
-&tog 3         &kp LEFT_ARROW  &kp UP_ARROW     &kp DOWN_ARROW  &mt LEFT_SHIFT RIGHT  &kp PG_UP      &to 2       &kp LG(BACKSPACE)  &trans                 &trans             &kp RSHFT  &kp RC(F4)        &kp F5         &kp F9                  &kp F10                  &kp F12          &kp F11        &trans
+&kp LG(LC(S))  &kp RC(W)       &kp LC(LS(TAB))  &kp LC(T)       &kp LC(TAB)           &kp LC(LS(T))  &to 2                                                                               &kp RS(NUMBER_9)  &mt RS(F7) F7  &kp RA(RC(N9))          &kp LEFT_BRACKET         &kp LG(LS(F12))  &trans         &trans
+&tog 3         &kp LEFT_ARROW  &kp UP_ARROW     &kp DOWN_ARROW  &mt LEFT_SHIFT RIGHT  &kp PG_UP      &to 3       &kp LG(BACKSPACE)  &trans                 &trans             &kp RSHFT  &kp RC(F4)        &kp F5         &kp F9                  &kp F10                  &kp F12          &kp F11        &trans
 &kp HOME       &kp HOME        &kp LC(HOME)     &kp LC(END)     &kp END               &kp PG_DN                                     &trans                 &trans                                          &kp LS(F5)     &trans                  &kp LS(F10)              &trans           &trans         &trans
 &kp END        &kp RC(Z)       &kp LC(X)        &kp LC(C)       &kp LC(V)                            &kp DELETE  &kp LA(BACKSPACE)  &kp RC(BACKSPACE)      &kp LA(BACKSPACE)  &kp ENTER  &kp BACKSPACE                    &kp LC(LA(LEFT_ARROW))  &kp LC(LA(RIGHT_ARROW))  &trans           &kp BACKSLASH  &kp PIPE
             >;
