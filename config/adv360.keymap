@@ -337,17 +337,6 @@
     keymap {
         compatible = "zmk,keymap";
 
-        maltron {
-            display-name = "Maltron";
-            bindings = <
-&mt F1 NUMBER_1                    &mt F2 NUMBER_2         &mt F3 NUMBER_3         &mt F4 NUMBER_4    &mt F5 N5       &mt F6 NUMBER_6  &launchbar                                                                                        &switchapps                    &mt F7 NUMBER_7  &mt F8 N8               &mt F9 N9           &mt F10 NUMBER_0   &mt F11 MINUS  &mt F12 EQUAL
-&mt RS(LEFT_BRACKET) LEFT_BRACKET  &kp Q                   &kp P                   &kp Y              &lt 4 C         &kp B            &sl 3                                                                                             &mt LC(LA(MINUS)) KP_MULTIPLY  &kp V            &kp M                   &kp U               &kp Z              &kp L          &mt RS(RIGHT_BRACKET) RIGHT_BRACKET
-&kp ESC                            &kp A                   &kp N                   &kp I              &kp S           &kp F            &vimmac           &homey_left HOME BACKSPACE  &kp END            &kp LEFT_ARROW  &kp RIGHT_ARROW  &mkp LCLK                      &kp D            &kp T                   &kp H               &kp O              &kp R          &kp SINGLE_QUOTE
-&sk LSHIFT                         &kp COMMA               &kp PERIOD              &kp J              &kp G           &mt CAPS GRAVE                                                 &kp PG_UP          &kp UP_ARROW                                                    &kp SEMICOLON    &kp W                   &kp K               &kp X              &kp SLASH      &sk RIGHT_SHIFT
-&sk LEFT_SHIFT                     &mt RS(PIPE) BACKSLASH  &mt LEFT_CONTROL GRAVE  &mt LEFT_GUI LEFT  &mt LALT RIGHT                   &space_layer 2 E  &thumb 6 TAB                &kp PAGE_DOWN      &kp DOWN_ARROW  &thumb 6 ENTER   &space_layer 2 SPACE                            &mt RIGHT_ALT UP_ARROW  &mt RIGHT_GUI DOWN  &kp RIGHT_CONTROL  &kp SLASH      &sk RIGHT_SHIFT
-            >;
-        };
-
         qwerty {
             display-name = "qwerty";
             bindings = <
@@ -359,12 +348,23 @@
             >;
         };
 
+        maltron {
+            display-name = "Maltron";
+            bindings = <
+&mt F1 NUMBER_1                    &mt F2 NUMBER_2         &mt F3 NUMBER_3         &mt F4 NUMBER_4    &mt F5 N5       &mt F6 NUMBER_6  &launchbar                                                                                        &switchapps                    &mt F7 NUMBER_7  &mt F8 N8               &mt F9 N9           &mt F10 NUMBER_0   &mt F11 MINUS  &mt F12 EQUAL
+&mt RS(LEFT_BRACKET) LEFT_BRACKET  &kp Q                   &kp P                   &kp Y              &lt 4 C         &kp B            &sl 3                                                                                             &mt LC(LA(MINUS)) KP_MULTIPLY  &kp V            &kp M                   &kp U               &kp Z              &kp L          &mt RS(RIGHT_BRACKET) RIGHT_BRACKET
+&kp ESC                            &kp A                   &kp N                   &kp I              &kp S           &kp F            &vimmac           &homey_left HOME BACKSPACE  &kp END            &kp LEFT_ARROW  &kp RIGHT_ARROW  &mkp LCLK                      &kp D            &kp T                   &kp H               &kp O              &kp R          &kp SINGLE_QUOTE
+&sk LSHIFT                         &kp COMMA               &kp PERIOD              &kp J              &kp G           &mt CAPS GRAVE                                                 &kp PG_UP          &kp UP_ARROW                                                    &kp SEMICOLON    &kp W                   &kp K               &kp X              &kp SLASH      &sk RIGHT_SHIFT
+&sk LEFT_SHIFT                     &mt RS(PIPE) BACKSLASH  &mt LEFT_CONTROL GRAVE  &mt LEFT_GUI LEFT  &mt LALT RIGHT                   &space_layer 3 E  &thumb 6 TAB                &kp PAGE_DOWN      &kp DOWN_ARROW  &thumb 6 ENTER   &space_layer 3 SPACE                            &mt RIGHT_ALT UP_ARROW  &mt RIGHT_GUI DOWN  &kp RIGHT_CONTROL  &kp SLASH      &sk RIGHT_SHIFT
+            >;
+        };
+
         fn {
             display-name = "Fn";
             bindings = <
 &kp F1         &kp F2          &kp F3           &kp F4          &kp F5                &kp F6         &tog 5                                                                              &mo 3             &kp F7         &kp F8                  &kp F9                   &kp F10          &kp F11        &kp F12
-&kp LG(LC(S))  &kp RC(W)       &kp LC(LS(TAB))  &kp LC(T)       &kp LC(TAB)           &kp LC(LS(T))  &to 1                                                                               &kp RS(NUMBER_9)  &mt RS(F7) F7  &kp RA(RC(N9))          &kp LEFT_BRACKET         &kp LG(LS(F12))  &trans         &trans
-&tog 2         &kp LEFT_ARROW  &kp UP_ARROW     &kp DOWN_ARROW  &mt LEFT_SHIFT RIGHT  &kp PG_UP      &to 0       &kp LG(BACKSPACE)  &trans                 &trans             &kp RSHFT  &kp RC(F4)        &kp F5         &kp F9                  &kp F10                  &kp F12          &kp F11        &trans
+&kp LG(LC(S))  &kp RC(W)       &kp LC(LS(TAB))  &kp LC(T)       &kp LC(TAB)           &kp LC(LS(T))  &to 0                                                                               &kp RS(NUMBER_9)  &mt RS(F7) F7  &kp RA(RC(N9))          &kp LEFT_BRACKET         &kp LG(LS(F12))  &trans         &trans
+&tog 3         &kp LEFT_ARROW  &kp UP_ARROW     &kp DOWN_ARROW  &mt LEFT_SHIFT RIGHT  &kp PG_UP      &to 2       &kp LG(BACKSPACE)  &trans                 &trans             &kp RSHFT  &kp RC(F4)        &kp F5         &kp F9                  &kp F10                  &kp F12          &kp F11        &trans
 &kp HOME       &kp HOME        &kp LC(HOME)     &kp LC(END)     &kp END               &kp PG_DN                                     &trans                 &trans                                          &kp LS(F5)     &trans                  &kp LS(F10)              &trans           &trans         &trans
 &kp END        &kp RC(Z)       &kp LC(X)        &kp LC(C)       &kp LC(V)                            &kp DELETE  &kp LA(BACKSPACE)  &kp RC(BACKSPACE)      &kp LA(BACKSPACE)  &kp ENTER  &kp BACKSPACE                    &kp LC(LA(LEFT_ARROW))  &kp LC(LA(RIGHT_ARROW))  &trans           &kp BACKSLASH  &kp PIPE
             >;
@@ -399,7 +399,7 @@
 &kp TAB    &kp Q      &kp HOME        &kp UP_ARROW            &kp END                  &kp PG_UP  &none                                                          &none       &resetwarp               &kp LS(LA(LC(LG(F1))))  &kp LS(LA(LC(LG(F2))))  &kp LS(LA(LC(LG(F3))))  &kp KP_MINUS     &kp BSLH
 &kp ESC    &kp A      &kp LEFT_ARROW  &kp DOWN_ARROW          &kp RIGHT_ARROW          &kp PG_DN  &none       &kp LSHFT    &kp LGUI      &kp LGUI   &kp LSHFT    &none       &kp LC(LG(LA(LS(F10))))  &kp LS(LA(LC(LG(F4))))  &kp LS(LA(LC(LG(F5))))  &kp LS(LA(LC(LG(F6))))  &kp KP_PLUS      &kp SQT
 &kp LSHFT  &kp Z      &kp X           &kp LA(LS(LEFT_ARROW))  &kp LA(LS(RIGHT_ARROW))  &kp B                               &kp HOME      &kp PG_UP                           &kp RC(RA(N))            &kp LA(LC(LG(LS(F7))))  &kp LA(LC(LG(LS(F8))))  &kp LG(LC(LA(LS(F9))))  &kp KP_ENTER     &kp RSHFT
-&mo 3      &kp GRAVE  &kp CAPS        &kp LA(LEFT_ARROW)      &kp LA(RIGHT_ARROW)                 &clickleft  &clickright  &kp END       &kp PG_DN  &clickright  &clickleft                           &kp LEFT                &kp DOWN                &kp UP_ARROW            &kp RIGHT        &mo 2
+&mo 3      &kp GRAVE  &kp CAPS        &kp LA(LEFT_ARROW)      &kp LA(RIGHT_ARROW)                 &clickleft  &clickright  &kp END       &kp PG_DN  &clickright  &clickleft                           &kp LEFT                &kp DOWN                &kp UP_ARROW            &kp RIGHT        &mo 3
             >;
         };
 
