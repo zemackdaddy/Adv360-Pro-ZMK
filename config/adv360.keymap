@@ -344,7 +344,7 @@
 &mt RS(LEFT_BRACKET) LEFT_BRACKET  &kp Q                   &kp P                   &kp Y              &lt 4 C         &kp B            &kp LA(LC(F1))                                                                                    &mt LC(LA(MINUS)) KP_MULTIPLY  &kp V            &kp M                   &kp U               &kp Z              &kp L          &mt RS(RIGHT_BRACKET) RIGHT_BRACKET
 &kp ESC                            &kp A                   &kp N                   &kp I              &kp S           &kp F            &vimmac           &homey_left HOME BACKSPACE  &kp END            &kp LEFT_ARROW  &kp RIGHT_ARROW  &mkp LCLK                      &kp D            &kp T                   &kp H               &kp O              &kp R          &kp SINGLE_QUOTE
 &sk LSHIFT                         &kp COMMA               &kp PERIOD              &kp J              &kp G           &mt CAPS GRAVE                                                 &kp PG_UP          &kp UP_ARROW                                                    &kp SEMICOLON    &kp W                   &kp K               &kp X              &kp SLASH      &sk RIGHT_SHIFT
-&sk LEFT_SHIFT                     &mt RS(PIPE) BACKSLASH  &mt LEFT_CONTROL GRAVE  &mt LEFT_GUI LEFT  &mt LALT RIGHT                   &space_layer 3 E  &thumb 6 TAB                &kp PAGE_DOWN      &kp DOWN_ARROW  &thumb 6 ENTER   &space_layer 2 SPACE                            &mt RIGHT_ALT UP_ARROW  &mt RIGHT_GUI DOWN  &kp RIGHT_CONTROL  &kp SLASH      &sk RIGHT_SHIFT
+&sk LEFT_SHIFT                     &mt RS(PIPE) BACKSLASH  &mt LEFT_CONTROL GRAVE  &mt LEFT_GUI LEFT  &mt LALT RIGHT                   &space_layer 2 E  &thumb 6 TAB                &kp PAGE_DOWN      &kp DOWN_ARROW  &thumb 6 ENTER   &space_layer 2 SPACE                            &mt RIGHT_ALT UP_ARROW  &mt RIGHT_GUI DOWN  &kp RIGHT_CONTROL  &kp SLASH      &sk RIGHT_SHIFT
             >;
         };
 
@@ -364,7 +364,7 @@
             bindings = <
 &kp F1         &kp F2          &kp F3           &kp F4          &kp F5                &kp F6         &tog 5                                                                              &mo 3             &kp F7         &kp F8                  &kp F9                   &kp F10          &kp F11        &kp F12
 &kp LG(LC(S))  &kp RC(W)       &kp LC(LS(TAB))  &kp LC(T)       &kp LC(TAB)           &kp LC(LS(T))  &to 0                                                                               &kp RS(NUMBER_9)  &mt RS(F7) F7  &kp RA(RC(N9))          &kp LEFT_BRACKET         &kp LG(LS(F12))  &trans         &trans
-&tog 3         &kp LEFT_ARROW  &kp UP_ARROW     &kp DOWN_ARROW  &mt LEFT_SHIFT RIGHT  &kp PG_UP      &to 1       &kp LG(BACKSPACE)  &trans                 &trans             &kp RSHFT  &kp RC(F4)        &kp F5         &kp F9                  &kp F10                  &kp F12          &kp F11        &trans
+&none          &kp LEFT_ARROW  &kp UP_ARROW     &kp DOWN_ARROW  &mt LEFT_SHIFT RIGHT  &kp PG_UP      &to 1       &kp LG(BACKSPACE)  &trans                 &trans             &kp RSHFT  &kp RC(F4)        &kp F5         &kp F9                  &kp F10                  &kp F12          &kp F11        &trans
 &kp HOME       &kp HOME        &kp LC(HOME)     &kp LC(END)     &kp END               &kp PG_DN                                     &trans                 &trans                                          &kp LS(F5)     &trans                  &kp LS(F10)              &trans           &trans         &trans
 &kp END        &kp RC(Z)       &kp LC(X)        &kp LC(C)       &kp LC(V)                            &kp DELETE  &kp LA(BACKSPACE)  &kp RC(BACKSPACE)      &kp LA(BACKSPACE)  &kp ENTER  &kp BACKSPACE                    &kp LC(LA(LEFT_ARROW))  &kp LC(LA(RIGHT_ARROW))  &trans           &kp BACKSLASH  &kp PIPE
             >;
@@ -411,6 +411,16 @@
 &kp HASH         &kp CARET       &kp EQUAL             &kp UNDERSCORE         &kp DOLLAR        &kp ASTERISK  &trans       &kp BACKSLASH  &kp PERIOD            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &kp TILDE        &kp LESS_THAN   &kp PIPE              &kp MINUS              &kp GREATER_THAN  &kp SLASH                                 &kp RS(ASTERISK)      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &kp AT_SIGN      &kp AMPERSAND   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS                        &kp PERCENT  &kp COLON      &kp SEMICOLON         &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
