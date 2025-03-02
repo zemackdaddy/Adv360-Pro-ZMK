@@ -334,7 +334,7 @@
         };
 
         leaderkey {
-            bindings = <&kp LS(LA(LC(LG(L))))>;
+            bindings = <&kp LG(SPACE)>;
             key-positions = <49 50>;
         };
     };
