@@ -220,7 +220,7 @@
         launchbar: launchbar {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LA(NUMBER_1))>, <&macro_release>;
+            bindings = <&kp LC(LG(SPACE))>, <&macro_release>;
 
             label = "LAUNCHBAR";
         };
@@ -333,8 +333,8 @@
             key-positions = <72 73>;
         };
 
-        leaderkey {
-            bindings = <&kp LG(SPACE)>;
+        launchbar {
+            bindings = <&launchbar>;
             key-positions = <49 50>;
         };
     };
