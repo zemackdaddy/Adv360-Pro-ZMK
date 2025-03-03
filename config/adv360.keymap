@@ -220,7 +220,7 @@
         launchbar: launchbar {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LG(SPACE))>, <&macro_release>;
+            bindings = <&kp LC(SPACE)>, <&macro_release>;
 
             label = "LAUNCHBAR";
         };
