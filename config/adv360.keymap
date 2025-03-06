@@ -354,11 +354,11 @@
         qwerty {
             display-name = "qwerty";
             bindings = <
-&kp EQUAL  &kp N1              &kp N2              &kp N3               &kp N4               &kp N5  &launchbar                                      &switchapps  &kp N6  &kp N7                &kp N8                &kp N9               &kp N0                       &kp MINUS
-&kp TAB    &kp Q               &kp W               &lt 5 E              &lt 4 R              &kp T   &sl 3                                           &trans       &kp Y   &kp U                 &kp I                 &kp O                &kp P                        &kp BACKSLASH
-&kp ESC    &homey_left LALT A  &homey_left LGUI S  &homey_left LCTRL D  &index_left LSHFT F  &kp G   &trans      &trans  &trans      &trans  &trans  &trans       &kp H   &index_right RSHFT J  &homey_right RCTRL K  &homey_right LGUI L  &homey_right RALT SEMICOLON  &kp SQT
-&sk LSHFT  &kp Z               &kp X               &kp C                &kp V                &kp B                       &trans      &trans                       &kp N   &kp M                 &kp COMMA             &kp PERIOD           &kp SLASH                    &sk RIGHT_SHIFT
-&sl 3      &trans              &trans              &trans               &trans                       &trans      &trans  &trans      &trans  &trans  &trans               &trans                &trans                &trans               &trans                       &toggletalon
+&trans  &trans              &trans              &trans               &trans               &trans  &trans                                      &trans  &trans  &trans                &trans                &trans               &trans                       &trans
+&trans    &kp Q               &kp W               &lt 5 E              &lt 4 R              &kp T   &trans                                         &trans       &kp Y   &kp U                 &kp I                 &kp O                &kp P                        &trans
+&trans    &homey_left LALT A  &homey_left LGUI S  &homey_left LCTRL D  &index_left LSHFT F  &kp G   &trans      &trans  &trans      &trans  &trans  &trans       &kp H   &index_right RSHFT J  &homey_right RCTRL K  &homey_right LGUI L  &homey_right RALT SEMICOLON  &trans
+&trans  &kp Z               &kp X               &kp C                &kp V                &kp B                       &trans      &trans                       &kp N   &kp M                 &kp COMMA             &kp PERIOD           &kp SLASH                    &trans
+&trans      &trans              &trans              &trans               &trans                       &trans      &trans  &trans      &trans  &trans  &trans               &trans                &trans                &trans               &trans                       &trans
             >;
         };
 
