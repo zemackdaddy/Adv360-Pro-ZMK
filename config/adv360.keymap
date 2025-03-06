@@ -388,8 +388,8 @@
             display-name = "Mouse";
             bindings = <
 &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                       &trans                  &none           &none            &none           &none            &none  &none
-&none  &none         &none         &none         &none         &none         &bootloader                                                 &bootloader             &msc SCRL_DOWN  &msc SCRL_RIGHT  &mmv MOVE_UP    &msc SCRL_LEFT   &none  &none
-&none  &none         &none         &none         &none         &none         &none         &none        &none      &bt BT_CLR  &none     &rgb_ug RGB_MEFS_CMD 5  &msc SCRL_UP    &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &none
+&none  &none         &none         &none         &none         &none         &bootloader                                                 &bootloader             &msc SCRL_UP    &msc SCRL_RIGHT  &mmv MOVE_UP    &msc SCRL_LEFT   &none  &none
+&none  &none         &none         &none         &none         &none         &none         &none        &none      &bt BT_CLR  &none     &rgb_ug RGB_MEFS_CMD 5  &msc SCRL_DOWN  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &none
 &none  &none         &none         &none         &macro_ver    &none                                    &none      &none                                         &none           &none            &none           &none            &none  &none
 &none  &none         &none         &none         &none                       &kp KP_MINUS  &kp KP_PLUS  &none      &none       &mkp MB2  &mkp MB1                                &bl BL_INC       &bl BL_DEC      &none            &none  &none
             >;
