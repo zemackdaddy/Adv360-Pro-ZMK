@@ -406,7 +406,7 @@
             >;
         };
 
-        layer_6 {
+        Symbols {
             display-name = "Symbols";
             bindings = <
 &trans           &kp GRAVE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp COMMA     &trans                                                            &trans  &trans  &trans        &trans        &trans        &trans  &trans
