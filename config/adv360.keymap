@@ -335,6 +335,11 @@
             bindings = <&launchbar>;
             key-positions = <49 50>;
         };
+
+        combo_launhbar {
+            bindings = <&launchbar>;
+            key-positions = <65 70>;
+        };
     };
 
     keymap {
