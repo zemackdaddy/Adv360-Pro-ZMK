@@ -386,22 +386,22 @@
         mod {
             display-name = "Mod";
             bindings = <
-&none           &bt BT_SEL 0      &bt BT_SEL 1   &bt BT_SEL 2      &bt BT_SEL 3   &bt BT_SEL 4      &none                                                                                      &trans           &none                 &none                                   &none                       &none                           &none  &none
-&none           &none             &kp LS(MINUS)  &kp EQUAL         &kp LS(EQUAL)  &kp LS(QUESTION)  &bootloader                                                                                &bootloader      &kp LEFT_PARENTHESIS  &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt RIGHT_BRACE LEFT_BRACE  &mt RIGHT_BRACKET LEFT_BRACKET  &none  &none
-&none           &kp LS(NUMBER_4)  &kp MINUS      &kp LS(NUMBER_6)  &kp LC(N0)     &kp QUESTION      &none        &kp LA(BACKSPACE)  &kp RC(BACKSPACE)      &bt BT_CLR  &rgb_ug RGB_MEFS_CMD 5  &kp KP_DIVIDE    &kp KP_DOT            &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt RIGHT_BRACE LEFT_BRACE  &mt RIGHT_BRACKET LEFT_BRACKET  &none  &none
-&none           &none             &none          &none             &kp RS(PIPE)   &kp PIPE                                          &none                  &none                                                &none                 &mt GREATER_THAN LESS_THAN              &mt LS(EQUAL) EQUAL         &mt LS(MINUS) MINUS             &none  &none
-&studio_unlock  &none             &none          &none             &tog 3                           &kp DEL      &none              &none                  &none       &bl BL_TOG              &rgb_ug RGB_TOG                        &bl BL_INC                              &bl BL_DEC                  &none                           &none  &none
+&bt BT_CLR      &bt BT_SEL 0      &bt BT_SEL 1   &bt BT_SEL 2      &bt BT_SEL 3   &bt BT_SEL 4      &none                                                                                  &trans           &none                 &none                                   &none                       &none                           &none  &none
+&none           &none             &kp LS(MINUS)  &kp EQUAL         &kp LS(EQUAL)  &kp LS(QUESTION)  &bootloader                                                                            &bootloader      &kp LEFT_PARENTHESIS  &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt RIGHT_BRACE LEFT_BRACE  &mt RIGHT_BRACKET LEFT_BRACKET  &none  &none
+&none           &kp LS(NUMBER_4)  &kp MINUS      &kp LS(NUMBER_6)  &kp LC(N0)     &kp QUESTION      &none        &kp LA(BACKSPACE)  &kp RC(BACKSPACE)      &trans  &rgb_ug RGB_MEFS_CMD 5  &kp KP_DIVIDE    &kp KP_DOT            &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt RIGHT_BRACE LEFT_BRACE  &mt RIGHT_BRACKET LEFT_BRACKET  &none  &none
+&none           &none             &none          &none             &kp RS(PIPE)   &kp PIPE                                          &none                  &none                                            &none                 &mt GREATER_THAN LESS_THAN              &mt LS(EQUAL) EQUAL         &mt LS(MINUS) MINUS             &none  &none
+&studio_unlock  &none             &none          &none             &tog 3                           &kp DEL      &none              &none                  &none   &bl BL_TOG              &rgb_ug RGB_TOG                        &bl BL_INC                              &bl BL_DEC                  &none                           &none  &none
             >;
         };
 
         mouse_layer {
             display-name = "Mouse";
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                       &trans                  &none           &none            &none           &none            &none  &none
-&none  &none         &none         &none         &none         &none         &bootloader                                                 &bootloader             &msc SCRL_UP    &msc SCRL_RIGHT  &mmv MOVE_UP    &msc SCRL_LEFT   &none  &none
-&none  &none         &none         &none         &none         &none         &none         &none        &none      &bt BT_CLR  &none     &rgb_ug RGB_MEFS_CMD 5  &msc SCRL_DOWN  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &none
-&none  &none         &none         &none         &macro_ver    &none                                    &none      &none                                         &none           &none            &none           &none            &none  &none
-&none  &none         &none         &none         &none                       &kp KP_MINUS  &kp KP_PLUS  &none      &none       &mkp MB2  &mkp MB1                                &bl BL_INC       &bl BL_DEC      &none            &none  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                   &trans                  &none           &none            &none           &none            &none  &none
+&none  &none         &none         &none         &none         &none         &bootloader                                             &bootloader             &msc SCRL_UP    &msc SCRL_RIGHT  &mmv MOVE_UP    &msc SCRL_LEFT   &none  &none
+&none  &none         &none         &none         &none         &none         &none        &mkp LCLK  &mkp MB2      &trans  &none     &rgb_ug RGB_MEFS_CMD 5  &msc SCRL_DOWN  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &none
+&none  &none         &none         &none         &macro_ver    &none                                 &none         &none                                     &none           &none            &none           &none            &none  &none
+&none  &none         &none         &none         &none                       &mkp MB1     &mkp MB2   &none         &none   &mkp MB2  &mkp MB1                                &bl BL_INC       &bl BL_DEC      &none            &none  &none
             >;
         };
 
