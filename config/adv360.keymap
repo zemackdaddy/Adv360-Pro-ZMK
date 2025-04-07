@@ -340,6 +340,11 @@
             bindings = <&launchbar>;
             key-positions = <65 70>;
         };
+
+        combo_leaderkey {
+            bindings = <&kp LA(F12)>;
+            key-positions = <66 69>;
+        };
     };
 
     keymap {
