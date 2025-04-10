@@ -340,6 +340,11 @@
             bindings = <&launchbar>;
             key-positions = <65 70>;
         };
+
+        combo_homerow {
+            bindings = <&kp LC(LG(SLASH))>;
+            key-positions = <66 69>;
+        };
     };
 
     keymap {
