@@ -275,7 +275,7 @@
         leaderkey: leaderkey {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(F12)>, <&macro_release>;
+            bindings = <&kp LA(MINUS)>, <&macro_release>;
 
             label = "LEADERKEY";
         };
