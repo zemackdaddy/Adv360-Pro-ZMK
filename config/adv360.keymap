@@ -278,6 +278,13 @@
             bindings = <&kp LS(LA(LC(LG(U))))>;
             label = "MOUSELESS";
         };
+
+        mouseless_toggle: mouseless_toggle {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(LG(H))))>;
+            label = "MOUSELESS_TOGGLE";
+        };
     };
 
     combos {
