@@ -186,7 +186,7 @@
         vimmac: vimmac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(SLASH))>, <&macro_release>;
+            bindings = <&kp LG(LC(I))>, <&macro_release>;
 
             label = "VIMMAC";
         };
@@ -215,39 +215,11 @@
             label = "LAUNCHBAR";
         };
 
-        typ_from: typ_from {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp F &kp R &kp O &kp M &kp SPACE>;
-            label = "TYP_FROM";
-        };
-
-        typ_dont: typ_dont {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp D &kp O &kp N &kp SQT &kp T &kp SPACE>;
-            label = "TYP_DONT";
-        };
-
         typ_rocket: typ_rocket {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp SPACE &kp EQUAL &kp GT &kp SPACE>;
             label = "TYP_ROCKET";
-        };
-
-        typ_select: typ_select {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp S &kp E &kp L &kp E &kp C &kp T &kp SPACE>;
-            label = "TYP_SELECT";
-        };
-
-        typ_where: typ_where {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp W &kp H &kp E &kp R &kp E &kp SPACE>;
-            label = "TYP_WHERE";
         };
 
         typ_orderby: typ_orderby {
@@ -275,14 +247,14 @@
         mouseless: mouseless {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(LG(U))))>;
+            bindings = <&kp LC(LG(U))>;
             label = "MOUSELESS";
         };
 
         mouseless_toggle: mouseless_toggle {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(LG(H))))>;
+            bindings = <&kp LC(LG(H))>;
             label = "MOUSELESS_TOGGLE";
         };
     };
