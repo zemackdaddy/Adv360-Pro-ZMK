@@ -262,39 +262,9 @@
     combos {
         compatible = "zmk,combos";
 
-        typ_from {
-            bindings = <&typ_from>;
-            key-positions = <33 44>;
-        };
-
-        typ_dont {
-            bindings = <&typ_dont>;
-            key-positions = <40 30>;
-        };
-
         typ_rocket {
             bindings = <&typ_rocket>;
             key-positions = <67 68>;
-        };
-
-        typ_select {
-            bindings = <&typ_select>;
-            key-positions = <32 26>;
-        };
-
-        typ_where {
-            bindings = <&typ_where>;
-            key-positions = <55 44>;
-        };
-
-        typ_orderby {
-            bindings = <&typ_orderby>;
-            key-positions = <43 19>;
-        };
-
-        typ_update {
-            bindings = <&typ_update>;
-            key-positions = <24 16>;
         };
 
         nav-backward {
