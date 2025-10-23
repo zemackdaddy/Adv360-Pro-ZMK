@@ -186,7 +186,7 @@
         vimmac: vimmac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(I))>, <&macro_release>;
+            bindings = <&kp LG(LA(I))>, <&macro_release>;
 
             label = "VIMMAC";
         };
@@ -247,14 +247,14 @@
         mouseless: mouseless {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LG(U))>;
+            bindings = <&kp LG(LA(U))>;
             label = "MOUSELESS";
         };
 
         mouseless_toggle: mouseless_toggle {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LG(H))>;
+            bindings = <&kp LG(LA(H))>;
             label = "MOUSELESS_TOGGLE";
         };
     };
