@@ -186,7 +186,7 @@
         vimmac: vimmac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LA(I))>, <&macro_release>;
+            bindings = <&kp LG(LA(Y))>, <&macro_release>;
 
             label = "VIMMAC";
         };
