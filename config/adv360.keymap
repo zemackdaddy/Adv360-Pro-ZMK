@@ -268,8 +268,15 @@
         rider_hide_all_windows: rider_hide_all_windows {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&rider_hide_all_windows>;
+            bindings = <&kp LG(LS(F12))>;
             label = "RIDER_HIDE_ALL_WINDOWS";
+        };
+
+        rider_recent_proj: rider_recent_proj {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LG(R))>;
+            label = "RIDER_RECENT_PROJ";
         };
     };
 
@@ -347,7 +354,7 @@
             bindings = <
 &kp F1         &kp F2          &kp F3           &kp F4          &kp F5                &kp F6         &tog 0                                                                              &mo 3             &kp F7         &kp F8                  &kp F9                   &kp F10        &kp F11          &kp F12
 &kp LG(LC(S))  &kp RC(W)       &kp LC(LS(TAB))  &kp LC(T)       &kp LC(TAB)           &kp LC(LS(T))  &to 0                                                                               &kp RS(NUMBER_9)  &mt RS(F7) F7  &kp RA(RC(N9))          &kp LEFT_BRACKET         &kp LS(F11)    &kp LS(LG(F12))  &rider_close_proj
-&none          &kp LEFT_ARROW  &kp UP_ARROW     &kp DOWN_ARROW  &mt LEFT_SHIFT RIGHT  &kp PG_UP      &to 1       &kp LG(BACKSPACE)  &trans                 &trans             &kp RSHFT  &kp RC(F4)        &mt RS(F5) F5  &kp F9                  &kp F10                  &kp F11        &kp F12          &trans
+&none          &kp LEFT_ARROW  &kp UP_ARROW     &kp DOWN_ARROW  &mt LEFT_SHIFT RIGHT  &kp PG_UP      &to 1       &kp LG(BACKSPACE)  &trans                 &trans             &kp RSHFT  &kp RC(F4)        &mt RS(F5) F5  &kp F9                  &kp F10                  &kp F11        &kp F12          &rider_recent_proj
 &kp HOME       &kp HOME        &kp LC(HOME)     &kp LC(END)     &kp END               &kp PG_DN                                     &trans                 &trans                                          &kp LC(LEFT)   &kp LC(LS(LEFT))        &kp LS(LC(RIGHT))        &kp LC(RIGHT)  &trans           &trans
 &kp END        &kp RC(Z)       &kp LC(X)        &kp LC(C)       &kp LC(V)                            &kp DELETE  &kp LA(BACKSPACE)  &kp RC(BACKSPACE)      &kp LA(BACKSPACE)  &kp ENTER  &kp BACKSPACE                    &kp LC(LA(LEFT_ARROW))  &kp LC(LA(RIGHT_ARROW))  &trans         &kp BACKSLASH    &kp PIPE
             >;
